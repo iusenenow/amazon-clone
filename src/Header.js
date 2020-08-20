@@ -16,6 +16,7 @@ const Header = () => {
       </div>
 
       <div className="header-nav">
+
         <Link to="/login" className="header-link">
           <div className="header-option">
             <span className="header-option-one">Hello, Wei</span>
@@ -40,8 +41,8 @@ const Header = () => {
         <Link to="/checkout" className="header-link">
           <div className="header-shoppingCart">
             <ShoppingCartIcon />
+            <span className="header-option-two header-shoppingCartCount">0</span>
           </div>
-          <span>0</span>
         </Link>
       </div>
 

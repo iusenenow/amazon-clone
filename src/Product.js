@@ -21,11 +21,11 @@ const Product = ({ id, title, image, price, rating }) => {
         </p>
         <div className="product-rating">
           {Array(rating).fill().map(_ =>
-            (<p>⭐</p>))}
+            <span role="img" aria-label="rating star">⭐</span>)}
         </div>
       </div>
 
-      <img src={image} alt="image" />
+      <img src={image} alt="product" />
       <button onClick={addToBasket}>Add to Cart</button>
     </div>
   )

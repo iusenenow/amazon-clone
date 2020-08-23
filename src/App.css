@@ -162,3 +162,20 @@ body {
 .product > button:hover {
   background-color: #e6b948;
 }
+
+/* Checkout page */
+
+.checkout-ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.checkoutProduct {
+  display: flex;
+}
+
+.checkoutProduct-image {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}

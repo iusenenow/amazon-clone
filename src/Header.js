@@ -7,7 +7,6 @@ import { useStateValue } from './StateProvider';
 const Header = () => {
 
   const [{ cart }] = useStateValue()
-  console.log(cart)
 
   return (
     <nav className="header">

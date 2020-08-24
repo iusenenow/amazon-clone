@@ -157,6 +157,7 @@ body {
   border-radius: 3px;
   min-width: 80%;
   margin: 5px auto;
+  cursor: pointer;
 }
 
 .product > button:hover {
@@ -165,17 +166,52 @@ body {
 
 /* Checkout page */
 
+.checkout {
+  background: #fff;
+}
+
 .checkout-ad {
   width: 100%;
   margin-bottom: 10px;
 }
 
+.checkout-title {
+  margin: 10px 20px;
+}
+
 .checkoutProduct {
   display: flex;
+  padding: 20px;
 }
 
 .checkoutProduct-image {
   width: 180px;
   height: 180px;
   object-fit: contain;
+}
+
+.checkoutProduct-info {
+  padding: 10px 20px
+}
+
+.checkoutProduct-title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.checkoutProduct-rating {
+  margin-bottom: 8px;
+}
+
+.checkoutProduct-info > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkoutProduct-info > button:hover {
+  background-color: #e6b948;
 }

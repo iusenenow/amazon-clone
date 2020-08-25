@@ -181,7 +181,7 @@ body {
 
 .checkoutProduct {
   display: flex;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .checkoutProduct-image {

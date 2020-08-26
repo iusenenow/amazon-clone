@@ -175,13 +175,24 @@ body {
   margin-bottom: 10px;
 }
 
+.checkout-section {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.checkout-section-left {
+  flex: 1;
+  margin-right: 30px;
+}
+
 .checkout-title {
-  margin: 10px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
 }
 
 .checkoutProduct {
   display: flex;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
 .checkoutProduct-image {
@@ -203,7 +214,8 @@ body {
   margin-bottom: 8px;
 }
 
-.checkoutProduct-info > button {
+.checkoutProduct-info > button,
+.subtotal > button {
   background-color: #f0c14b;
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
@@ -212,6 +224,27 @@ body {
   cursor: pointer;
 }
 
-.checkoutProduct-info > button:hover {
+.checkoutProduct-info > button:hover,
+.subtotal > button:hover {
   background-color: #e6b948;
+}
+
+.subtotal {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.subtotal-gift {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.subtotal-gift > input {
+  margin-right: 5px;
 }

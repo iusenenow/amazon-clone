@@ -1,15 +1,9 @@
 export const initialState = {
-  cart: [
-    {
-      id: "5",
-      title: 'Echo Dot (3rd Gen) – Smart speaker with Alexa - Charcoal Fabric',
-      price: 69.00,
-      rating: 5,
-      image: "https://images-na.ssl-images-amazon.com/images/I/61MdyHSbxHL._AC_UL480_SR480,480_.jpg"
-    }
-  ],
+  cart: [],
   user: null,
 }
+
+export const getCartTotal = cart => cart.reduce((amount, item) => +item.price + amount, 0)
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -25,14 +19,12 @@ const reducer = (state, action) => {
       const idx = state.cart.findIndex(item => item.id === action.payload)
 
       if (idx >= 0) {
-        newCart.splice(index, 1)
+        newCart.splice(idx, 1)
       } else {
         console.warn(`Can not remove product (id: ${action.payload}) as its not in cart.`)
       }
 
-      return {
-        state
-      }
+      return { ...state, cart: newCart }
     default:
       return state;
   }

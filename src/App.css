@@ -215,7 +215,9 @@ body {
 }
 
 .checkoutProduct-info > button,
-.subtotal > button {
+.subtotal > button,
+.login-signInButton,
+.login-registerButton {
   background-color: #f0c14b;
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
@@ -225,7 +227,9 @@ body {
 }
 
 .checkoutProduct-info > button:hover,
-.subtotal > button:hover {
+.subtotal,
+.login-Button,
+.login-registerButton > button:hover {
   background-color: #e6b948;
 }
 
@@ -247,4 +251,67 @@ body {
 
 .subtotal-gift > input {
   margin-right: 5px;
+}
+
+/* Login page */
+
+.login {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.login-container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+.login-container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.login-container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 0 5px;
+  width: 100%
+}
+
+.login-container > p {
+  margin-top: 15px;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.login-logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.login-signInButton {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login-registerButton {
+  background-color: rgb(233, 231, 231);
+  margin-bottom: 10px;
+}
+
+.login-registerButton:hover {
+  background-color: lightgray;
 }

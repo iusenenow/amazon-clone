@@ -315,3 +315,16 @@ body {
 .login-registerButton:hover {
   background-color: lightgray;
 }
+
+/* Footer */
+.footer {
+  background-color: #131A22;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.footer span {
+  color: gray;
+}

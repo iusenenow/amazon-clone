@@ -7,10 +7,11 @@ import Checkout from './Checkout';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+import Footer from './Footer';
 
 function App() {
 
-  const [dispatch] = useStateValue()
+  const [{ user }, dispatch] = useStateValue()
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(authUser => {
@@ -19,6 +20,7 @@ function App() {
           type: "SET_USER",
           payload: authUser
         })
+
       } else {
         dispatch({
           type: "SET_USER",
@@ -31,6 +33,8 @@ function App() {
       unsubscribe()
     }
   }, [])
+
+  console.log(user)
 
   return (
     <Router>
@@ -48,6 +52,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
